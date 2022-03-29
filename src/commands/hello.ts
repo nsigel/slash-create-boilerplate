@@ -18,6 +18,6 @@ export default class HelloCommand extends SlashCommand {
 		});
 	}
 	async run(ctx: CommandContext): Promise<MessageOptions> {
-		return { content: `Hello! <@${ctx.user.id}>` };
+		return { content: `Hello! ${ctx.user.mention}` };
 	}
 }
